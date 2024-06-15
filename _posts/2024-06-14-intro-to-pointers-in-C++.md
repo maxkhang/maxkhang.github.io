@@ -48,6 +48,6 @@ I'll set our `micky_mouse` as the number 10:
 Pointer is just a variable that stores the memory address of another variable. We can also say that a pointer is pointing to a space in computer's memory (RAM) that is allocated for a data type which can be an integer (int), a double and so on.
 
 For example:
-```C++
+```cpp
   int our_number = 10;
 ```
