@@ -10,8 +10,11 @@ tags: Blogging
 
 If these are the questions in your head right now, you've come to the right place. After reading this blog, you will be able to answer these questions.
 
+
 > *Disclaimer: this blog is not an academic article, there will be many simplified terms and concepts just so you can grasp the idea quickly.*
+
 ---
+
 ### Let's get started
 
 To understand what a pointer is, you need to understand what a variable is and how it looks in the memory.
