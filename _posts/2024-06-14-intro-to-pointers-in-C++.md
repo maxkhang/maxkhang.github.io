@@ -24,7 +24,7 @@ To understand what a pointer is, you need to understand what a variable is and h
 > *Note: int (integer) and double are data types that you likely encounter as a beginner. You just need to remember that int is a number that must not have a decimal point and places. Whereas, a double is number that has a decimal point and decimal places*
 
 For example:
-```C++
+```cpp
   int micky_mouse;
 ```
 
@@ -37,7 +37,7 @@ Whenever you write `micky_mouse` in your code, the compiler will understand that
   * its address in the memory
 
 I'll set our `micky_mouse` as the number 10:
-```C++
+```cpp
   micky_mouse = 10;
 ```
 ![A variable](/assets/x004898.png)
