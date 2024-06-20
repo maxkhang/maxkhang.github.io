@@ -89,8 +89,11 @@ As shown, the pointer `ptr` is pointing to the the variable `our_number`; in oth
 As mentioned, we can access a variable's value via a pointer by dereferencing that pointer using the syntax `*ptr`. 
 However, how does that actually work?
 * We need to imagine the compiler looking into the pointer's value, going to the address pointed to by the pointer, and then getting the variable's value out.
+
 As the example above, the compiler will go to the `ptr`, then the `our_number`, and get the number `10` , all by using addresses.
 
 I think that is all for this blog. I hope you guys got something out of it. Thank you for reading. 
+
 Please feel free to check out my other blogs. We will discuss pointers and other interesting stuff there. 
+
 Cheers!!!
