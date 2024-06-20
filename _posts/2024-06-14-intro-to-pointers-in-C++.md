@@ -33,7 +33,7 @@ When you declare the variable named `micky_mouse` with a data type of an integer
 Whenever you write `micky_mouse` in your code, the compiler will understand that you're referring to the space I've just mentioned.
 
 * Second, a variable has two parts:
-  * its content (can be anything, even another address of another variable)
+  * its content (can be anything, even another address of another variable), a.k.a its value
   * its address in the memory
 
 I'll set our `micky_mouse` as the number 10:
