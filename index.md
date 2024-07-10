@@ -1,8 +1,8 @@
 Hey, welcome to my den!
 
-I am no one but a guy who has a little bit of experience in coding, here to make your life a bit easier.
+I'm Khang (Macheven is my nickname), no one but a guy with a little bit of experience in coding, here to make your life a bit easier.
 
-On this site, you'll find a lot about C++, programming tips and concepts. 
-You might come accross posts about airplanes and aviation, because I love them so much. {:>}
+You'll find much about C++, programming tips and concepts on this site. 
+You might find posts about airplanes and aviation because I love them so much. {:>}
 
-Hope my blogs can make your coding journey a bit easier. Grab a water and join me!
+I hope my blogs make your coding journey easier. Grab a water and join me!
