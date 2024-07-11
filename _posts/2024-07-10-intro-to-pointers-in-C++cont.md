@@ -96,10 +96,10 @@ The example shows that the values of `number` and `another_number` are changed a
  	}
  	```
 
-	Output:
+- Output:
   
   	<div style="text-align: center;">
-    		<img src="/assets/output_of_prefixVsPostfix.png" alt="output1">
+    	    <img src="/assets/output_of_prefixVsPostfix.png" alt="output1">
         </div>
   
 - The program above illustrates the differences between prefix and postfix increments. As you can see, I first initialize two variables with the same value, an `integer 9`. After the program is executed, the variable `number` value is incremented by 1 unit to 10, but that is not *visually* the case with the variable `another_number`.
