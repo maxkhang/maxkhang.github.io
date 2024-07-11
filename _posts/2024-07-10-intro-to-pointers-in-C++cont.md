@@ -36,7 +36,7 @@ I'll show you right now.
 
       For example:
       
-      ```cpp
+      ```C++
          //This program increases, decreases the value of a number and prints the output to the console
         #include <iostream>
         using namespace std;
