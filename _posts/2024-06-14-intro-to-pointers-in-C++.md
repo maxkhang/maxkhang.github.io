@@ -50,7 +50,7 @@ I'll set our `micky_mouse` as the number 10:
 To put it simply, a pointer is just a variable that stores the memory address of another variable or an object (you can leave this for my upcoming object-oriented programming blog). In other words, we say a pointer is pointing to a space in computer's memory (RAM) that is allocated for a data type which can be an integer (int), a double and so on.
 
 For example:
-```java
+```
   int our_number = 10;
 ```
 The variable `our_number` has the value of an integer 10 and an address of, let's say, x004050. In order to get the address of a variable in C++, we just need an operator called the ampersand `&`. (put it before the variable name to get the address of that variable). 
