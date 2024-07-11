@@ -57,10 +57,7 @@ I'll show you right now.
       ```
 
       Output:
-      ```cpp
-        8
-        10
-      ```
+      
 
 The example shows that the values of `number` and `another_number` are changed as the value of `number` decreases by 1 unit and that of `another_number` increases by 1 unit. Now you should understand how increment and decrement or `++` and `--` work.
 
@@ -79,60 +76,65 @@ The example shows that the values of `number` and `another_number` are changed a
          number--;
       ```
 
-    Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
+- Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
 
 	```cpp
   
-		#include <iostream>
-        	using namespace std;
+	#include <iostream>
+ 	using namespace std;
 
-        	int main()
- 		{
-          		int number = 9;
+ 	int main()
+	{
+   		int number = 9;
 
-          		int another_number = 9;
+  		int another_number = 9;
 
-          		cout << ++number << endl;
+   		cout << ++number << endl;
 
-	      		cout << another_number++ << endl;
+      		cout << another_number++ << endl;
 
-	      		return 0;
-        	}
+      		return 0;
+  	}
  	```
 	Output:
   
-  	```cpp
-           10
-        	9
-   	```
+  	<div style="text-align: center;">
+    		<img src="/assets/output_of_prefixVsPostfix.png" alt="output1">
+        </div>
   
-The program above illustrates the differences between prefix and postfix increments. As you can see, I first initialize two variables with the same value, an `integer 9`. After the program is executed, the variable `number` value is incremented by 1 unit to 10, but that is not *visually* the case with the variable `another_number`.
+- The program above illustrates the differences between prefix and postfix increments. As you can see, I first initialize two variables with the same value, an `integer 9`. After the program is executed, the variable `number` value is incremented by 1 unit to 10, but that is not *visually* the case with the variable `another_number`.
 
-By visually, I mean the `another_number` is already incremented by 1, but the second `cout` statement did not show us its incremented value. Why is all of that? 
+- By visually, I mean the `another_number` is already incremented by 1, but the second `cout` statement did not show us its incremented value. Why is all of that? 
 
 --> This is because the *prefix increment or decrement* returns the already incremented or decremented value, whereas the *postfix increment or decrement* returns the value before the increment. Let's look at the example below if you don't trust me. 
 
-Example: 
+- Example: 
 
-```cpp
-	#include <iostream>
-	using namespace std;
+	```cpp
+		#include <iostream>
+		using namespace std;
 
-	int main()
-	{
-		int number = 9;
+		int main()
+		{
+			int number = 9;
 
-		int another_number = 9;
+			int another_number = 9;
 
-		cout << ++number << endl;
+			cout << ++number << endl;
 
-		cout << another_number++ << endl;
+			cout << another_number++ << endl;
 
-		cout << another_number << endl;
+			cout << another_number << endl;
 
-		return 0;
-	}
-```
+			return 0;
+		}
+	```
+
+- Output:
+
+	<div style="text-align: center;">
+    		<img src="/assets/output_of_prefixVsPostfix(2).png" alt="output2">
+	</div>
 
 Trust me, guys. I did nothing but add another `cout` statement to print the value of `another_number` on the screen. This shows that the variable's actual value after the postfix increment is increased by 1. 
 
