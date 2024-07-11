@@ -55,8 +55,7 @@ I'll show you right now.
           return 0;
         }
       ```
-
-      Output:
+		Output:
       
       <div style="text-align: center;">
     	<img src="/assets/output_of_increVsDecrement.png" alt="output3">
