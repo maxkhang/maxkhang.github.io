@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro to Pointers in C++
+title: Intro to Pointers in C++ cont
 description: A pointer overview for beginners
 date: 2024-07-10 21:11:00
 tags: Blogging
