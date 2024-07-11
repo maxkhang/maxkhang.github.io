@@ -58,6 +58,9 @@ I'll show you right now.
 
       Output:
       
+      <div style="text-align: center;">
+    		<img src="/assets/output_of_increVsDecrement.png" alt="output3">
+      </div>
 
 The example shows that the values of `number` and `another_number` are changed as the value of `number` decreases by 1 unit and that of `another_number` increases by 1 unit. Now you should understand how increment and decrement or `++` and `--` work.
 
