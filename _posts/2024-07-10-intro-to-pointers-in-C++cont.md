@@ -107,7 +107,7 @@ The example shows that the values of `number` and `another_number` are changed a
 
 - By visually, I mean the `another_number` is already incremented by 1, but the second `cout` statement did not show us its incremented value. Why is all of that? 
 
---> This is because the *prefix increment or decrement* returns the already incremented or decremented value, whereas the *postfix increment or decrement* returns the value before the increment. Let's look at the example below if you don't trust me. 
+--> This is because the *prefix increment or decrement* returns the already incremented or decremented value, whereas the *postfix increment or decrement* returns the value before the increment. Let's look at the example below if you need to trust me. 
 
 - Example: 
 
@@ -137,5 +137,5 @@ The example shows that the values of `number` and `another_number` are changed a
     		<img src="/assets/output_of_prefixVsPostfix(2).png" alt="output2">
 	</div>
 
-Trust me, guys. I did nothing but add another `cout` statement to print the value of `another_number` on the screen. This shows that the variable's actual value after the postfix increment is increased by 1. 
+Trust me, guys. I did nothing but add another `cout` statement to print the value of `another_number` on the screen. This shows that the variable's actual value after the postfix increment increases by 1. 
 
