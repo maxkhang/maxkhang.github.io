@@ -36,25 +36,25 @@ I'll show you right now.
 
       - For example:
       
-      ```cpp
+      	   ```cpp
    	  	//This program increases and decreases the value of a number and prints the output to the console
-              #include <iostream>
+            #include <iostream>
         	using namespace std;
 
         	int main()
         	{
-          		int number = 9;
-          		int another_number = 9;
+		        int number = 9;
+      		    int another_number = 9;
 
-          		number--;
-          		another_number++;
+      		    number--;
+      		    another_number++;
 
-          		cout << number << endl;
-      			cout << another_number << endl;
+      		    cout << number << endl;
+      		    cout << another_number << endl;
     
-          		return 0;
+		        return 0;
         	}
-      ```
+      	  ```
 
 		- Output:
 	<div style="text-align: center;">
@@ -80,28 +80,22 @@ The example shows that the values of `number` and `another_number` are changed a
 
 - Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
 
-
 	```cpp
-  
-	#include <iostream>
+ 	#include <iostream>
  	using namespace std;
 
  	int main()
-	{
-   		int number = 9;
+ 	{
+	    int number = 9;
+ 	    int another_number = 9;
 
-  		int another_number = 9;
+ 	    cout << ++number << endl;
+ 	    cout << another_number++ << endl;
 
-   		cout << ++number << endl;
-
-      		cout << another_number++ << endl;
-
-      		return 0;
-  	}
- 
+ 	    return 0;
+ 	}
  	```
 
- 
 	Output:
   
   	<div style="text-align: center;">
