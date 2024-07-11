@@ -24,7 +24,7 @@ You have already been introduced to the idea of arithmetic. Nevertheless, how is
 I'll show you right now.
 
 ### Pointer Arithmetic
-  #### ** Prefix and Postfix increment/decrement
+  ### ** Prefix and Postfix increment/decrement
 - Before jumping into pointer arithmetic, we need to talk about `prefix and postfix increment/decrement.`
 
 >*If you're already familiar with this, you can ignore this part and get right into the pointer arithmetic part below*
@@ -34,7 +34,8 @@ I'll show you right now.
     - Increment `++` means adding 1 unit to the current object, number, or whatever it is.
     - Decrement `--` means subtracting 1 unit from the current object, number, or regardless of what it is.
 
-      For example: 
+      For example:
+      
       ```cpp
          //This program increases, decreases the value of a number and prints the output to the console
         #include <iostream>
