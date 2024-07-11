@@ -34,32 +34,32 @@ I'll show you right now.
     - Increment `++` means adding 1 unit to the current object, number, or whatever it is.
     - Decrement `--` means subtracting 1 unit from the current object, number, or regardless of what it is.
 
-      For example:
+      - For example:
       
       ```cpp
-         //This program increases and decreases the value of a number and prints the output to the console
-        #include <iostream>
-        using namespace std;
+   		//This program increases and decreases the value of a number and prints the output to the console
+      		#include <iostream>
+        	using namespace std;
 
-        int main()
-        {
-          int number = 9;
-          int another_number = 9;
+        	int main()
+        	{
+          		int number = 9;
+          		int another_number = 9;
 
-          number--;
-          another_number++;
+          		number--;
+          		another_number++;
 
-          cout << number << endl;
-          cout << another_number << endl;
+          		cout << number << endl;
+      			cout << another_number << endl;
     
-          return 0;
-        }
+          		return 0;
+        	}
       ```
-		Output:
-      
-      <div style="text-align: center;">
-    	<img src="/assets/output_of_increVsDecrement.png" alt="output3">
-      </div>
+
+	Output:
+	<div style="text-align: center;">
+    		<img src="/assets/output_of_increVsDecrement.png" alt="output3">
+      	</div>
 
 The example shows that the values of `number` and `another_number` are changed as the value of `number` decreases by 1 unit and that of `another_number` increases by 1 unit. Now you should understand how increment and decrement or `++` and `--` work.
 
