@@ -78,23 +78,23 @@ The example shows that the values of `number` and `another_number` are changed a
          number--;
       ```
 
-- Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
+	- Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
 
-	```cpp
- 	#include <iostream>
- 	using namespace std;
+		```cpp
+ 			#include <iostream>
+ 			using namespace std;
 
- 	int main()
- 	{
-	    int number = 9;
- 	    int another_number = 9;
+ 			int main()
+ 			{
+	    		int number = 9;
+ 	    		int another_number = 9;
 
- 	    cout << ++number << endl;
- 	    cout << another_number++ << endl;
+ 	    		cout << ++number << endl;
+ 	    		cout << another_number++ << endl;
 
- 	    return 0;
- 	}
- 	```
+ 			return 0;
+ 			}
+ 		```
 
 - Output:
   
