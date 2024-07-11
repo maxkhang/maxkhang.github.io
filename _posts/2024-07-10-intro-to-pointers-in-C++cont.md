@@ -36,27 +36,28 @@ I'll show you right now.
 
       - For example:
       
-      	   ```cpp
-   	  	//This program increases and decreases the value of a number and prints the output to the console
-            #include <iostream>
-        	using namespace std;
+```cpp
+     //This program increases and decreases the value of a number and prints the output to the console
+     #include <iostream>
+     using namespace std;
 
-        	int main()
-        	{
-		        int number = 9;
-      		    int another_number = 9;
+     int main()
+     {
+        int number = 9;
+        int another_number = 9;
 
-      		    number--;
-      		    another_number++;
+        number--;
+        another_number++;
 
-      		    cout << number << endl;
-      		    cout << another_number << endl;
-    
-		        return 0;
-        	}
-      	  ```
+        cout << number << endl;
+        cout << another_number << endl;
 
-		- Output:
+        return 0;
+     }
+```
+
+
+- Output:
 	<div style="text-align: center;">
     		<img src="/assets/output_of_increVsDecrement.png" alt="output3">
       	</div>
@@ -78,29 +79,29 @@ The example shows that the values of `number` and `another_number` are changed a
          number--;
       ```
 
-	- Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
+- Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
 
-		```cpp
- 			#include <iostream>
- 			using namespace std;
+```cpp
+   #include <iostream>
+   using namespace std;
 
- 			int main()
- 			{
-	    		int number = 9;
- 	    		int another_number = 9;
+   int main()
+   {
+      int number = 9;
+      int another_number = 9;
 
- 	    		cout << ++number << endl;
- 	    		cout << another_number++ << endl;
+      cout << ++number << endl;
+      cout << another_number++ << endl;
 
- 			return 0;
- 			}
- 		```
+      return 0;
+   }
+```
 
 - Output:
   
-  	<div style="text-align: center;">
-    	    <img src="/assets/output_of_prefixVsPostfix.png" alt="output1">
-        </div>
+<div style="text-align: center;">
+   <img src="/assets/output_of_prefixVsPostfix.png" alt="output1">
+</div>
   
 - The program above illustrates the differences between prefix and postfix increments. As you can see, I first initialize two variables with the same value, an `integer 9`. After the program is executed, the variable `number` value is incremented by 1 unit to 10, but that is not *visually* the case with the variable `another_number`.
 
@@ -110,25 +111,25 @@ The example shows that the values of `number` and `another_number` are changed a
 
 - Example: 
 
-	```cpp
-		#include <iostream>
-		using namespace std;
+```cpp
+   #include <iostream>
+   using namespace std;
 
-		int main()
-		{
-			int number = 9;
+   int main()
+   {
+      int number = 9;
 
-			int another_number = 9;
+      int another_number = 9;
 
-			cout << ++number << endl;
+      cout << ++number << endl;
 
-			cout << another_number++ << endl;
+      cout << another_number++ << endl;
 
-			cout << another_number << endl;
+      cout << another_number << endl;
 
-			return 0;
-		}
-	```
+      return 0;
+   }
+```
 
 - Output:
 
