@@ -37,8 +37,8 @@ I'll show you right now.
       - For example:
       
       ```cpp
-   		//This program increases and decreases the value of a number and prints the output to the console
-      		#include <iostream>
+   	  	//This program increases and decreases the value of a number and prints the output to the console
+              #include <iostream>
         	using namespace std;
 
         	int main()
@@ -56,7 +56,7 @@ I'll show you right now.
         	}
       ```
 
-	Output:
+		- Output:
 	<div style="text-align: center;">
     		<img src="/assets/output_of_increVsDecrement.png" alt="output3">
       	</div>
@@ -80,6 +80,7 @@ The example shows that the values of `number` and `another_number` are changed a
 
 - Now, let's examine this simple example to see how the difference between prefix and postfix influences the result we want to achieve.
 
+
 	```cpp
   
 	#include <iostream>
@@ -98,6 +99,8 @@ The example shows that the values of `number` and `another_number` are changed a
       		return 0;
   	}
  	```
+
+ 
 	Output:
   
   	<div style="text-align: center;">
