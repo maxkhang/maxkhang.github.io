@@ -65,3 +65,113 @@ In this section, you will grasp the general idea of this project.
 - We have to choose initial guess Z<sub>0</sub>, which is difficult so I'll not mention in this blog, then use the mentioned technique to improve it until it converges to a root of the equation.
 - To determine the shade of each pixel that corresponds to the initial Z<sub>0</sub>, we need to set it based on the number of iteration it takes to converge or not converge.
 - We will use this function: f(Z<sub>n</sub>) = Z<sub>n</sub><sup>3</sup>  - 2Z<sub>n</sub> + 2 --> f'(Z<sub>n</sub>) = 3Z<sub>n</sub><sup>2</sup> - 2
+
+## Project modules
+
+- After getting all the general ideas of the project, I hope you find it interesting and doable. Next, I will talk about the steps of making this product in detail, and in the final, there will be a mistake that I made and I will share it with you guys so you can avoid it in the future.
+
+---
+In oder to implement this project, we need to have multiple C++ classes.
+- First, we have Complex class: Objects of this class represent complex numbers.
+  - ```cpp
+        #pragma once
+        #include <iostream>
+
+        using namespace std;
+
+
+        class Complex
+        {
+        private:
+	        double real;
+	        double imag;
+        public:
+	        ~Complex();
+	        Complex();
+	        Complex(const Complex&);
+	        Complex(double);
+	        Complex(double, double);
+	        double& operator[](const char*);
+	        friend const Complex operator*(const Complex&, const Complex&);
+	        friend const Complex operator/(const Complex&, const Complex&);
+	        friend const Complex operator+(const Complex&, const Complex&);
+	        friend const Complex operator-(const Complex&, const Complex&);
+	        friend double getMagnitude(const Complex&);
+	        class InputOutOfBoundsException;
+        };
+
+        class Complex::InputOutOfBoundsException
+        {
+        private:
+	        const char* errorMessage;
+	        const char* offendingIndex;
+        public:
+	        InputOutOfBoundsException(const char*, const char*);
+	        const char* returnError();
+	        const char* returnOffendingIndex();
+        };
+    ```
+- Second, we have Pixel class: Objects of the class represent pixels in the Newton's fractal image
+  - ```cpp
+        #pragma once
+        #include <iostream>
+        using namespace std;
+
+        class Pixel
+        {
+        private:
+	        unsigned int blue;
+	        unsigned int green;
+	        unsigned int red;
+        public:
+	        ~Pixel();
+	        const unsigned int& operator[](const char*);
+	        Pixel();
+	        Pixel(const Pixel&);
+	        Pixel(unsigned int, unsigned int, unsigned int);
+
+	        friend ostream& operator<<(ostream&, Pixel&);
+	        class InputOutOfBoundsException;
+        };
+
+        class Pixel::InputOutOfBoundsException
+        {
+        private:
+	        const char* errorMessage;
+	        const char* offendingIndex;
+        public:
+	        InputOutOfBoundsException(const char*, const char*);
+	        const char* returnError();
+	        const char* returnOffendingIndex();
+        };
+    ```
+- Finally, we have Fractal class: Objects of this class represent a Newton's fractal pattern
+  - ```cpp
+        #pragma once
+        #include "Complex.hpp"
+        #include "Pixel.hpp"
+
+        class Fractal
+        {
+        private:
+	        unsigned int rows;
+	        unsigned int cols;
+	        const static unsigned int maxIter = 30;
+	        Pixel** grid;
+	        Pixel determinePixelColor(Complex);
+	        void makeNewtonFractal();
+        public:
+
+	        ~Fractal();
+	        Fractal();
+	        Fractal(const Fractal&);
+	        Fractal(Fractal&&);
+	        Fractal(unsigned int, unsigned int);
+	        const Fractal& operator=(const Fractal&);
+	        Fractal& operator= (Fractal&&);
+	        friend void saveToPPM(const Fractal&, const char*);
+
+        };
+    ```
+- We also have a 2 nested classes in Complex and Pixel classes to handle exception as shown above. 
+   
