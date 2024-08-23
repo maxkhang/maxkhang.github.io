@@ -6,7 +6,7 @@ date: 2024-06-14 21:20:00 -0800
 tags: Blogging
 ---
 
-## What are pointers?
+## What is pointer?
 
 If this is the question in your head right now, you've come to the right place. After reading this blog, you will be able to answer that question.
 
